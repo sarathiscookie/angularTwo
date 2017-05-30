@@ -13,10 +13,14 @@ var AppComponent = (function () {
         this.title = 'Tour of heroes';
         this.heroes = [
             new hero_1.Hero(1, 'Windstorm'),
-            new hero_1.Hero(13, 'Bombasto'),
-            new hero_1.Hero(15, 'Magneta'),
-            new hero_1.Hero(20, 'Tornado')
+            new hero_1.Hero(2, 'Bombasto'),
+            new hero_1.Hero(3, 'Magneta'),
+            new hero_1.Hero(4, 'Tornado')
         ];
+        this.news = {
+            id: 1,
+            title: 'Climate changed'
+        };
         this.myHero = this.heroes[0];
     }
     return AppComponent;
@@ -24,7 +28,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n      <h1>{{title}}</h1>\n      <h2>My favorite hero is: {{myHero.name}}</h2>\n      <p>Heroes:</p>\n      <ul>\n          <li *ngFor=\"let hero of heroes\"> {{hero.name}} </li>\n      </ul>\n  ",
+        template: "\n      <h1>{{title}}</h1>\n      <h2>My favorite hero is: {{myHero.name}}</h2>\n      <p>Heroes:</p>\n      <ul>\n          <li *ngFor=\"let hero of heroes\"> {{hero.name}} </li>\n      </ul>\n      <p *ngIf=\"heroes.length > 3\">There are many heroes</p>\n      <p class=\"text-success\"> {{news.title}} </p>\n  ",
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

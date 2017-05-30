@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Hero } from './hero';
+import { News } from './news';
 @Component({
   selector: 'my-app',
   template: `
@@ -9,12 +10,19 @@ import { Hero } from './hero';
       <ul>
           <li *ngFor="let hero of heroes"> {{hero.name}} </li>
       </ul>
+      <p *ngIf="heroes.length > 3">There are many heroes</p>
+      <p class="text-success"> {{news.title}} </p>
   `,
 })
 export class AppComponent { title = 'Tour of heroes';
 heroes = [
     new Hero(1, 'Windstorm'),
-    new Hero(13, 'Bombasto'),
-    new Hero(15, 'Magneta'),
-    new Hero(20, 'Tornado')];
+    new Hero(2, 'Bombasto'),
+    new Hero(3, 'Magneta'),
+    new Hero(4, 'Tornado')
+    ];
+news: News = {
+  id: 1,
+  title: 'Climate changed'
+};
 myHero = this.heroes[0]; }
