@@ -7,10 +7,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var hero_1 = require("./hero");
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Tour of heroes';
-        this.heroes = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
+        this.heroes = [
+            new hero_1.Hero(1, 'Windstorm'),
+            new hero_1.Hero(13, 'Bombasto'),
+            new hero_1.Hero(15, 'Magneta'),
+            new hero_1.Hero(20, 'Tornado')
+        ];
         this.myHero = this.heroes[0];
     }
     return AppComponent;
@@ -18,7 +24,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n      <h1>{{title}}</h1>\n      <h2>My favorite hero is: {{myHero}}</h2>\n      <p>Heroes:</p>\n      <ul>\n          <li *ngFor=\"let hero of heroes\"> {{hero}} </li>\n      </ul>\n  ",
+        template: "\n      <h1>{{title}}</h1>\n      <h2>My favorite hero is: {{myHero.name}}</h2>\n      <p>Heroes:</p>\n      <ul>\n          <li *ngFor=\"let hero of heroes\"> {{hero.name}} </li>\n      </ul>\n  ",
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
