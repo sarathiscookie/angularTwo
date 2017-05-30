@@ -12,6 +12,7 @@ import { News } from './news';
       </ul>
       <p *ngIf="heroes.length > 3">There are many heroes</p>
       <p class="text-success"> {{news.title}} </p>
+      <input [(ngModel)]="news.title" placeholder="title" />
   `,
 })
 export class AppComponent { title = 'Tour of heroes';
