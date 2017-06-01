@@ -11,6 +11,7 @@ import { Hero } from './hero';
           </li>
       </ul>
       <hero-detail [hero]="selectedHero"></hero-detail>
+      <news-detail></news-detail>
   `,
 })
 export class AppComponent { title = 'Tour of heroes';
