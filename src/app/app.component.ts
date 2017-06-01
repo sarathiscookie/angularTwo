@@ -1,29 +1,37 @@
 import { Component } from '@angular/core';
 import { Hero } from './hero';
-import { News } from './news';
+/*import { News } from './news';*/
 @Component({
   selector: 'my-app',
   template: `
-      <h1>{{title}}</h1>
-      <h2>My favorite hero is: {{myHero.name}}</h2>
-      <p>Heroes:</p>
-      <ul>
-          <li *ngFor="let hero of heroes"> {{hero.name}} </li>
+      <h2>My Heroes</h2>
+      <ul class="heroes">
+          <li *ngFor="let hero of heroes" (click)="onSelect()">
+              <span class="badge">{{hero.id}}</span>{{hero.name}}
+          </li>
       </ul>
-      <p *ngIf="heroes.length > 3">There are many heroes</p>
-      <p class="text-success"> {{news.title}} </p>
-      <input [(ngModel)]="news.title" placeholder="title" />
+      <p>{{clickMessage}}</p>
   `,
 })
 export class AppComponent { title = 'Tour of heroes';
 heroes = [
-    new Hero(1, 'Windstorm'),
-    new Hero(2, 'Bombasto'),
-    new Hero(3, 'Magneta'),
-    new Hero(4, 'Tornado')
+    new Hero(11, 'Mr. Nice'),
+    new Hero(12, 'Narco'),
+    new Hero(13, 'Bombasto'),
+    new Hero(14, 'Celeritas'),
+    new Hero(15, 'Magneta'),
+    new Hero(16, 'RubberMan'),
+    new Hero(17, 'Dynama'),
+    new Hero(18, 'Dr IQ'),
+    new Hero(19, 'Magma'),
+    new Hero(20, 'Tornado')
     ];
-news: News = {
+    clickMessage = '';
+onSelect() {
+    this.clickMessage = 'Clicked';
+}
+/*news: News = {
   id: 1,
   title: 'Climate changed'
-};
-myHero = this.heroes[0]; }
+};*/
+/*myHero = this.heroes[0];*/ }
