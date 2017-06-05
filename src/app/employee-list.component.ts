@@ -1,8 +1,8 @@
 /**
  * Created by user on 05-06-2017.
  */
-import {Component, OnInit} from '@angular/core';
-import {EmployeeService} from './employee.service';
+import { Component, OnInit } from '@angular/core';
+import { EmployeeService } from './employee.service';
 import { Employees } from './employee';
 
 @Component({
