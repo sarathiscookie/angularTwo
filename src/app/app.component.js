@@ -32,7 +32,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n      <h2>My Heroes</h2>\n      <ul class=\"heroes\">\n          <li *ngFor=\"let hero of heroes\" (click)=\"onSelect(hero)\" [class.selected]=\"hero===selectedHero\">\n              <span class=\"badge\">{{hero.id}}</span>{{hero.name}}\n          </li>\n      </ul>\n      <hero-detail [hero]=\"selectedHero\"></hero-detail>\n      <news-detail></news-detail>\n  ",
+        template: "\n      <h2>My Heroes</h2>\n      <ul class=\"heroes\">\n          <li *ngFor=\"let hero of heroes\" (click)=\"onSelect(hero)\" [class.selected]=\"hero===selectedHero\">\n              <span class=\"badge\">{{hero.id}}</span>{{hero.name}}\n          </li>\n      </ul>\n      <hero-detail [hero]=\"selectedHero\"></hero-detail>\n      <div class=\"row\">\n          <employee-list></employee-list>\n          <employee-details></employee-details>\n      </div>\n  ",
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

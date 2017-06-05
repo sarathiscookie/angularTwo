@@ -11,21 +11,24 @@ import { Hero } from './hero';
           </li>
       </ul>
       <hero-detail [hero]="selectedHero"></hero-detail>
-      <news-detail></news-detail>
+      <div class="row">
+          <employee-list></employee-list>
+          <employee-details></employee-details>
+      </div>
   `,
 })
 export class AppComponent { title = 'Tour of heroes';
-heroes = [
-    new Hero(11, 'Mr. Nice'),
-    new Hero(12, 'Narco'),
-    new Hero(13, 'Bombasto'),
-    new Hero(14, 'Celeritas'),
-    new Hero(15, 'Magneta'),
-    new Hero(16, 'RubberMan'),
-    new Hero(17, 'Dynama'),
-    new Hero(18, 'Dr IQ'),
-    new Hero(19, 'Magma'),
-    new Hero(20, 'Tornado')
+    heroes = [
+        new Hero(11, 'Mr. Nice'),
+        new Hero(12, 'Narco'),
+        new Hero(13, 'Bombasto'),
+        new Hero(14, 'Celeritas'),
+        new Hero(15, 'Magneta'),
+        new Hero(16, 'RubberMan'),
+        new Hero(17, 'Dynama'),
+        new Hero(18, 'Dr IQ'),
+        new Hero(19, 'Magma'),
+        new Hero(20, 'Tornado')
     ];
 selectedHero: Hero;
 onSelect(hero: Hero): void {

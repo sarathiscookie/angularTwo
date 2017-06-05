@@ -11,7 +11,8 @@ var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms"); // <-- NgModel lives here
 var app_component_1 = require("./app.component");
 var hero_detail_component_1 = require("./hero-detail.component");
-var news_details_component_1 = require("./news-details.component");
+var employee_list_component_1 = require("./employee-list.component");
+var employee_detail_component_1 = require("./employee-detail.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -26,7 +27,8 @@ AppModule = __decorate([
         declarations: [
             app_component_1.AppComponent,
             hero_detail_component_1.HeroDetailComponent,
-            news_details_component_1.NewsDetailComponent
+            employee_list_component_1.EmployeeListComponent,
+            employee_detail_component_1.EmployeeDetailComponent
         ],
         bootstrap: [app_component_1.AppComponent]
     })

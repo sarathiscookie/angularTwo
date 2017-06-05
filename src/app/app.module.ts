@@ -4,7 +4,8 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 import { AppComponent }  from './app.component';
 import { HeroDetailComponent }  from './hero-detail.component';
-import { NewsDetailComponent }  from './news-details.component';
+import { EmployeeListComponent }  from './employee-list.component';
+import { EmployeeDetailComponent }  from './employee-detail.component';
 
 @NgModule({
   imports:      [
@@ -14,7 +15,8 @@ import { NewsDetailComponent }  from './news-details.component';
   declarations: [
       AppComponent,
       HeroDetailComponent,
-      NewsDetailComponent
+      EmployeeListComponent,
+      EmployeeDetailComponent
   ],
   bootstrap:    [ AppComponent ]
 })
