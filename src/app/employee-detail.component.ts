@@ -10,7 +10,7 @@ import {Component} from '@angular/core';
         <div class="col-md-6 pull-right">
             <h1>Employee Details</h1>
             <div class="list-group col-md-6">
-                <a href="#" class="list-group-item" *ngFor="let employee of employees">{{employee.id}}-{{employee.gender}}</a>
+                <a href="#" class="list-group-item" *ngFor="let employee of employees">{{employee.id}}.{{employee.name}}-{{employee.gender}}</a>
             </div>
         </div>
     `
