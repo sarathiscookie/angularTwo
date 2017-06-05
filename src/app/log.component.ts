@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'my-log',
     template: `
-        <div class="col-md-6 pull-right">
+        <div class="col-md-6">
             <h1>Daily logs</h1>
             <div class="list-group col-md-6">
                 <a href="#" class="list-group-item">Logs details</a>

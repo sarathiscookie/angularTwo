@@ -18,8 +18,11 @@ import { HeroService } from './hero.service';
           <employee-details></employee-details>
       </div>
       <div class="row col-md-12">
-          <my-department></my-department>
-          <my-log></my-log>
+          <nav>
+              <a class="btn btn-default" routerLink="/departments" routerLinkActive="active">Departments</a>
+              <a class="btn btn-default" routerLink="/logs" routerLinkActive="active">Logs</a>
+          </nav>
+          <router-outlet></router-outlet>
       </div>
   `,
     providers: [HeroService]

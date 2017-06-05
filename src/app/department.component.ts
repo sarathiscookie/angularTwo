@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'my-department',
     template: `
-        <div class="col-md-6 pull-left">
+        <div class="col-md-6">
             <h1>Department List</h1>
             <div class="list-group col-md-6">
                 <a href="#" class="list-group-item">Department details</a>
