@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Hero } from './hero';
+import {EmployeeService} from './employee.service';
 
 @Component({
   selector: 'my-app',
@@ -16,6 +17,7 @@ import { Hero } from './hero';
           <employee-details></employee-details>
       </div>
   `,
+    providers: [EmployeeService]
 })
 export class AppComponent { title = 'Tour of heroes';
     heroes = [

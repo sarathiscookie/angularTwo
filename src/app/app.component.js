@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var hero_1 = require("./hero");
+var employee_service_1 = require("./employee.service");
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Tour of heroes';
@@ -33,6 +34,7 @@ AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
         template: "\n      <h2>My Heroes</h2>\n      <ul class=\"heroes\">\n          <li *ngFor=\"let hero of heroes\" (click)=\"onSelect(hero)\" [class.selected]=\"hero===selectedHero\">\n              <span class=\"badge\">{{hero.id}}</span>{{hero.name}}\n          </li>\n      </ul>\n      <hero-detail [hero]=\"selectedHero\"></hero-detail>\n      <div class=\"row\">\n          <employee-list></employee-list>\n          <employee-details></employee-details>\n      </div>\n  ",
+        providers: [employee_service_1.EmployeeService]
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

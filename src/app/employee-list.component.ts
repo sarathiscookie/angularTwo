@@ -1,7 +1,8 @@
 /**
  * Created by user on 05-06-2017.
  */
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {EmployeeService} from './employee.service';
 
 @Component({
     selector: '<employee-list></employee-list>',
@@ -15,10 +16,11 @@ import {Component} from '@angular/core';
     `
 })
 
-export class EmployeeListComponent {
-    employees = [
-        {'id': 1, 'name': 'Joo', 'gender': 'Male'},
-        {'id': 2, 'name': 'Foo', 'gender': 'Female'},
-    ];
+export class EmployeeListComponent implements OnInit {
+    employees = [];
+    constructor(private _employeeService: EmployeeService) {}
+    ngOnInit() {
+        this.employees = this._employeeService.getEmployee();
+    }
 }
 
