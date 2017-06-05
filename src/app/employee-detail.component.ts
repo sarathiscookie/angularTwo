@@ -15,7 +15,8 @@ import {Employees} from './employee';
                 <a href="#" class="list-group-item" *ngFor="let employee of employees">{{employee.id}}.{{employee.name}}-{{employee.gender}}</a>
             </div>
         </div>
-    `
+    `,
+    providers: [EmployeeService]
 })
 
 export class EmployeeDetailComponent implements OnInit {
