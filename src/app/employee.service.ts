@@ -1,14 +1,13 @@
-import {Injectable} from '@angular/core';
 /**
  * Created by user on 05-06-2017.
  */
+import { Injectable } from '@angular/core';
+import { Employees } from './employee';
+import { EMPLOYEES } from './mock.employees';
 
 @Injectable()
 export class EmployeeService {
-    getEmployee() {
-        return [
-            {'id': 1, 'name': 'Joo', 'gender': 'Male'},
-            {'id': 2, 'name': 'Foo', 'gender': 'Female'},
-        ];
+    getEmployee(): Promise<Employees[]> {
+        return Promise.resolve(EMPLOYEES);
     }
 }

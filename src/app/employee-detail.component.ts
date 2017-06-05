@@ -4,6 +4,7 @@
 
 import {Component, OnInit} from '@angular/core';
 import {EmployeeService} from './employee.service';
+import {Employees} from './employee';
 
 @Component({
     selector: '<employee-details></employee-details>',
@@ -18,10 +19,13 @@ import {EmployeeService} from './employee.service';
 })
 
 export class EmployeeDetailComponent implements OnInit {
-    employees = [];
-    constructor(private _employeeService: EmployeeService) {}
+    employees: Employees [];
+    constructor(private employeeService: EmployeeService) {}
+    getEmployee(): void {
+        this.employeeService.getEmployee().then(employees => this.employees = employees);
+    }
     ngOnInit() {
-        this.employees = this._employeeService.getEmployee();
+        this.getEmployee();
     }
 }
 

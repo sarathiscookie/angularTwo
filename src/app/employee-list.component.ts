@@ -3,6 +3,7 @@
  */
 import {Component, OnInit} from '@angular/core';
 import {EmployeeService} from './employee.service';
+import { Employees } from './employee';
 
 @Component({
     selector: '<employee-list></employee-list>',
@@ -17,10 +18,13 @@ import {EmployeeService} from './employee.service';
 })
 
 export class EmployeeListComponent implements OnInit {
-    employees = [];
-    constructor(private _employeeService: EmployeeService) {}
-    ngOnInit() {
-        this.employees = this._employeeService.getEmployee();
+    employees: Employees[];
+    constructor(private employeeService: EmployeeService) {}
+    getEmployee(): void {
+        this.employeeService.getEmployee().then(employees => this.employees = employees);
+    }
+    ngOnInit(): void {
+        this.getEmployee();
     }
 }
 
