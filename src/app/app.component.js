@@ -31,7 +31,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n      <h2>{{ title }}</h2>\n      <ul class=\"heroes\">\n          <li *ngFor=\"let hero of heroes\" (click)=\"onSelect(hero)\" [class.selected]=\"hero===selectedHero\">\n              <span class=\"badge\">{{hero.id}}</span>{{hero.name}}\n          </li>\n      </ul>\n      <hero-detail [hero]=\"selectedHero\"></hero-detail>\n      <div class=\"row\">\n          <employee-list></employee-list>\n          <employee-details></employee-details>\n      </div>\n  ",
+        template: "\n      <h2>{{ title }}</h2>\n      <ul class=\"heroes\">\n          <li *ngFor=\"let hero of heroes\" (click)=\"onSelect(hero)\" [class.selected]=\"hero===selectedHero\">\n              <span class=\"badge\">{{hero.id}}</span>{{hero.name}}\n          </li>\n      </ul>\n      <hero-detail [hero]=\"selectedHero\"></hero-detail>\n      <div class=\"row col-md-12\">\n          <employee-list></employee-list>\n          <employee-details></employee-details>\n      </div>\n      <div class=\"row col-md-12\">\n          <my-department></my-department>\n          <my-log></my-log>\n      </div>\n  ",
         providers: [hero_service_1.HeroService]
     }),
     __metadata("design:paramtypes", [hero_service_1.HeroService])

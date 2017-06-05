@@ -13,9 +13,13 @@ import { HeroService } from './hero.service';
           </li>
       </ul>
       <hero-detail [hero]="selectedHero"></hero-detail>
-      <div class="row">
+      <div class="row col-md-12">
           <employee-list></employee-list>
           <employee-details></employee-details>
+      </div>
+      <div class="row col-md-12">
+          <my-department></my-department>
+          <my-log></my-log>
       </div>
   `,
     providers: [HeroService]

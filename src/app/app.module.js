@@ -13,6 +13,8 @@ var app_component_1 = require("./app.component");
 var hero_detail_component_1 = require("./hero-detail.component");
 var employee_list_component_1 = require("./employee-list.component");
 var employee_detail_component_1 = require("./employee-detail.component");
+var department_component_1 = require("./department.component");
+var log_component_1 = require("./log.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -28,7 +30,9 @@ AppModule = __decorate([
             app_component_1.AppComponent,
             hero_detail_component_1.HeroDetailComponent,
             employee_list_component_1.EmployeeListComponent,
-            employee_detail_component_1.EmployeeDetailComponent
+            employee_detail_component_1.EmployeeDetailComponent,
+            department_component_1.DepartmentComponent,
+            log_component_1.LogComponent
         ],
         bootstrap: [app_component_1.AppComponent]
     })

@@ -6,6 +6,8 @@ import { AppComponent }  from './app.component';
 import { HeroDetailComponent }  from './hero-detail.component';
 import { EmployeeListComponent }  from './employee-list.component';
 import { EmployeeDetailComponent }  from './employee-detail.component';
+import { DepartmentComponent } from './department.component';
+import { LogComponent } from './log.component';
 
 @NgModule({
   imports:      [
@@ -16,7 +18,9 @@ import { EmployeeDetailComponent }  from './employee-detail.component';
       AppComponent,
       HeroDetailComponent,
       EmployeeListComponent,
-      EmployeeDetailComponent
+      EmployeeDetailComponent,
+      DepartmentComponent,
+      LogComponent
   ],
   bootstrap:    [ AppComponent ]
 })
