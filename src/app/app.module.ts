@@ -7,6 +7,7 @@ import { HeroDetailComponent }  from './hero-detail.component';
 import { EmployeeListComponent }  from './employee-list.component';
 import { EmployeeDetailComponent }  from './employee-detail.component';
 import { DepartmentComponent } from './department.component';
+import { DepartmentDetailComponent } from './department-detail.component';
 import { LogComponent } from './log.component';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -22,6 +23,7 @@ import { AppRoutingModule } from './app-routing.module';
       EmployeeListComponent,
       EmployeeDetailComponent,
       DepartmentComponent,
+      DepartmentDetailComponent,
       LogComponent
   ],
   bootstrap:    [ AppComponent ]
