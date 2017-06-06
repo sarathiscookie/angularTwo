@@ -12,7 +12,7 @@ import { LogComponent } from './log.component';
 const routes: Routes = [
     { path: 'departments', component: DepartmentListComponent },
     { path: 'logs', component: LogComponent },
-    { path: 'departments/:id', component: DepartmentDetailComponent },
+    { path: 'departments/:id', component: DepartmentDetailComponent }, // passing parameter department id
 ];
 
 @NgModule({
