@@ -15,7 +15,7 @@ export class DepartmentDetailComponent implements OnInit {
     public departmentID;
     constructor(private router: ActivatedRoute) {}
     ngOnInit(): void {
-        let id = this.router.snapshot.params['id'];
+        let id = this.router.snapshot.params['id']; // snapshot: It used to take the present url eg: http://192.168.10.10:3000/departments/5
         this.departmentID = id;
     }
 }
