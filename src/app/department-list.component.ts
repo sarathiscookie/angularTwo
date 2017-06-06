@@ -20,7 +20,7 @@ import {DepartmentService} from './department.service';
     providers: [DepartmentService]
 })
 
-export class DepartmentComponent implements OnInit {
+export class DepartmentListComponent implements OnInit {
     department: Department[];
     constructor(private departmentService: DepartmentService) {}
     getDepartment(): void {

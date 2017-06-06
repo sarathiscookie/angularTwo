@@ -13,7 +13,7 @@ var app_component_1 = require("./app.component");
 var hero_detail_component_1 = require("./hero-detail.component");
 var employee_list_component_1 = require("./employee-list.component");
 var employee_detail_component_1 = require("./employee-detail.component");
-var department_component_1 = require("./department.component");
+var department_list_component_1 = require("./department-list.component");
 var department_detail_component_1 = require("./department-detail.component");
 var log_component_1 = require("./log.component");
 var app_routing_module_1 = require("./app-routing.module");
@@ -34,7 +34,7 @@ AppModule = __decorate([
             hero_detail_component_1.HeroDetailComponent,
             employee_list_component_1.EmployeeListComponent,
             employee_detail_component_1.EmployeeDetailComponent,
-            department_component_1.DepartmentComponent,
+            department_list_component_1.DepartmentListComponent,
             department_detail_component_1.DepartmentDetailComponent,
             log_component_1.LogComponent
         ],

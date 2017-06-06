@@ -8,13 +8,13 @@ import {DepartmentService} from './department.service';
 
 
 @Component({
-    selector: 'my-department',
+    /*selector: 'my-department',*/
     template: `
         <div class="col-md-6">
-            <h1>Departments Details</h1>
-            <div class="list-group col-md-6">
+            <h1>Departments Details with id = </h1>
+            <!--<div class="list-group col-md-6">
                 <a href="#" class="list-group-item" *ngFor="let dep of department">{{dep.description}}</a>
-            </div>
+            </div>-->
         </div>
     `,
     providers: [DepartmentService]
