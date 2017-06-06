@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
       <h2>{{ title }}</h2>
       <a routerLink="/dashboard">Dashboard</a>
       <a routerLink="/heroes">Heroes</a>
-      <!--<div class="row col-md-12">
+      <div class="row col-md-12">
           <employee-list></employee-list>
           <employee-details></employee-details>
       </div>
@@ -15,8 +15,8 @@ import { Component } from '@angular/core';
               <a class="btn btn-default" routerLink="/departments" routerLinkActive="active">Departments</a>
               <a class="btn btn-default" routerLink="/logs" routerLinkActive="active">Logs</a>
           </nav>
-      </div>-->
-      <router-outlet></router-outlet>
+          <router-outlet></router-outlet>
+      </div>
   `
 })
 

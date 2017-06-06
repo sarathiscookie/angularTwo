@@ -16,7 +16,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n      <h2>{{ title }}</h2>\n      <a routerLink=\"/dashboard\">Dashboard</a>\n      <a routerLink=\"/heroes\">Heroes</a>\n      <!--<div class=\"row col-md-12\">\n          <employee-list></employee-list>\n          <employee-details></employee-details>\n      </div>\n      <div class=\"row col-md-12\">\n          <nav>\n              <a class=\"btn btn-default\" routerLink=\"/departments\" routerLinkActive=\"active\">Departments</a>\n              <a class=\"btn btn-default\" routerLink=\"/logs\" routerLinkActive=\"active\">Logs</a>\n          </nav>\n      </div>-->\n      <router-outlet></router-outlet>\n  "
+        template: "\n      <h2>{{ title }}</h2>\n      <a routerLink=\"/dashboard\">Dashboard</a>\n      <a routerLink=\"/heroes\">Heroes</a>\n      <div class=\"row col-md-12\">\n          <employee-list></employee-list>\n          <employee-details></employee-details>\n      </div>\n      <div class=\"row col-md-12\">\n          <nav>\n              <a class=\"btn btn-default\" routerLink=\"/departments\" routerLinkActive=\"active\">Departments</a>\n              <a class=\"btn btn-default\" routerLink=\"/logs\" routerLinkActive=\"active\">Logs</a>\n          </nav>\n          <router-outlet></router-outlet>\n      </div>\n  "
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
