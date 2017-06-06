@@ -1,9 +1,14 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { RouterModule }   from '@angular/router';
 
 import { AppComponent }  from './app.component';
 import { HeroDetailComponent }  from './hero-detail.component';
+import { HeroesComponent }     from './heroes.component';
+import { HeroService }         from './hero.service';
+import { DashboardComponent }  from './dashboard.component';
+
 import { EmployeeListComponent }  from './employee-list.component';
 import { EmployeeDetailComponent }  from './employee-detail.component';
 import { DepartmentListComponent } from './department-list.component';
@@ -15,16 +20,40 @@ import { AppRoutingModule } from './app-routing.module';
   imports:      [
       BrowserModule,
       FormsModule,  // <-- import the FormsModule before binding with [(ngModel)]
-      AppRoutingModule
+      AppRoutingModule,
+      RouterModule.forRoot([
+          {
+              path: 'heroes',
+              component: HeroesComponent
+          },
+          {
+              path: 'dashboard',
+              component: DashboardComponent
+          },
+          {
+              path: '',
+              redirectTo: '/dashboard',
+              pathMatch: 'full'
+          },
+          {
+              path: 'detail/:id',
+              component: HeroDetailComponent
+          },
+      ])
   ],
   declarations: [
       AppComponent,
       HeroDetailComponent,
+      HeroesComponent,
+      DashboardComponent,
       EmployeeListComponent,
       EmployeeDetailComponent,
       DepartmentListComponent,
       DepartmentDetailComponent,
       LogComponent
+  ],
+  providers: [
+      HeroService
   ],
   bootstrap:    [ AppComponent ]
 })
