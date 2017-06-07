@@ -6,8 +6,7 @@ import { Component } from '@angular/core';
       <h2>{{ title }}</h2>
       <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
       <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
-      <router-outlet></router-outlet>
-      <!--<div class="row col-md-12">
+      <div class="row col-md-12">
           <employee-list></employee-list>
           <employee-details></employee-details>
       </div>
@@ -17,7 +16,7 @@ import { Component } from '@angular/core';
               <a class="btn btn-default" routerLink="/logs" routerLinkActive="active">Logs</a>
           </nav>
           <router-outlet></router-outlet>
-      </div>-->
+      </div>
   `,
     styleUrls: ['./app.component.css'],
 })
