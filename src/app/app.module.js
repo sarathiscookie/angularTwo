@@ -9,7 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms"); // <-- NgModel lives here
-var http_1 = require("@angular/http");
+var http_1 = require("@angular/http"); // Import http module
 var app_component_1 = require("./app.component");
 var dashboard_component_1 = require("./dashboard.component");
 var hero_detail_component_1 = require("./hero-detail.component");
