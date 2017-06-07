@@ -22,7 +22,7 @@ import { ActivatedRoute, Router, Params } from '@angular/router'; // We need to 
         <div class="row">
             <div class="col-md-6">
                 <div class="col-md-3">
-                    <button class="btn btn-default">Back</button>
+                    <button (click)="goToDepartments()" class="btn btn-default">Back</button>
                 </div>
             </div>
         </div>
@@ -52,5 +52,9 @@ export class DepartmentDetailComponent implements OnInit {
     goNext(): void {
         let nextId = this.departmentID + 1;
         this.router.navigate(['/departments', nextId]);
+    }
+    goToDepartments(): void {
+        let goToDepartmentsId = this.departmentID ? this.departmentID : null;
+        this.router.navigate(['/departments', {id: goToDepartmentsId}]);
     }
 }
