@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
         <div class="col-md-6">
             <h1>Daily logs</h1>
             <div class="list-group col-md-6">
-                <a href="#" class="list-group-item">Logs details</a>
+                <a class="list-group-item">Logs details</a>
             </div>
         </div>
     `

@@ -11,7 +11,7 @@ import { Employees } from './employee';
         <div class="col-md-6 pull-left">
             <h1>Employee List</h1>
             <div class="list-group col-md-6">
-                <a href="#" class="list-group-item" *ngFor="let employee of employees">{{employee.name}}</a>
+                <a class="list-group-item" *ngFor="let employee of employees">{{employee.name}}</a>
             </div>
         </div>
     `,

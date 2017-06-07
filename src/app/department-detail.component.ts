@@ -8,8 +8,24 @@ import { ActivatedRoute, Router, Params } from '@angular/router'; // We need to 
     /*selector: 'my-department',*/
     template: `
         <h3>Selected department id = {{departmentID}}</h3>
-        <a (click)="goPrevious()" class="btn btn-default">Previous</a>
-        <a (click)="goNext()" class="btn btn-default">Next</a>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="col-md-3">
+                    <a (click)="goPrevious()" class="btn btn-default">Previous</a>
+                </div>
+                <div class="col-md-3">
+                    <a (click)="goNext()" class="btn btn-default">Next</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="col-md-3">
+                    <button class="btn btn-default">Back</button>
+                </div>
+            </div>
+        </div>
     `
 })
 
