@@ -19,7 +19,7 @@ import { PageNotFoundComponent } from './page-not-found.component';
 import { AppRoutingModule } from './app-routing.module';
 
 // Imports for loading & configuring the in-memory web api
-import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+/*import { InMemoryWebApiModule } from 'angular-in-memory-web-api';*/
 import { InMemoryDataService }  from './in-memory-data.service';
 
 @NgModule({
@@ -27,7 +27,7 @@ import { InMemoryDataService }  from './in-memory-data.service';
       BrowserModule,
       FormsModule,  // <-- import the FormsModule before binding with [(ngModel)]
       HttpModule,  // Add module
-      InMemoryWebApiModule.forRoot(InMemoryDataService),
+      /*InMemoryWebApiModule.forRoot(InMemoryDataService),*/
       AppRoutingModule
   ],
   declarations: [
