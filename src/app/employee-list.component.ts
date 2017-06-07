@@ -22,10 +22,18 @@ export class EmployeeListComponent implements OnInit {
     employees: Employees[];
     constructor(private employeeService: EmployeeService) {}
     getEmployee(): void {
+        /*this.employeeService.getEmployee().then(employees => this.employees = employees);*/
         this.employeeService.getEmployee().then(employees => this.employees = employees);
     }
     ngOnInit(): void {
         this.getEmployee();
     }
+
+    /* Video method */
+    /*employees = [];
+    constructor(private employeeService: EmployeeService) {}
+    ngOnInit(): void {
+        this.employeeService.getEmployees().subscribe(resEmployeeData => this.employees = resEmployeeData);
+    }*/
 }
 
