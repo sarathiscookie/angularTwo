@@ -11,15 +11,17 @@ import { HeroesComponent }     from './heroes.component';
 import { DepartmentListComponent } from './department-list.component';
 import { DepartmentDetailComponent } from './department-detail.component';
 import { LogComponent } from './log.component';
+import { PageNotFoundComponent } from './page-not-found.component';
 
 const routes: Routes = [
     { path: 'departments', component: DepartmentListComponent },
     { path: 'logs', component: LogComponent },
     { path: 'departments/:id', component: DepartmentDetailComponent }, // passing parameter department id
     { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-    { path: 'dashboard',  component: DashboardComponent },
+    { path: 'dashboard', component: DashboardComponent },
     { path: 'detail/:id', component: HeroDetailComponent },
-    { path: 'heroes',     component: HeroesComponent }
+    { path: 'heroes', component: HeroesComponent },
+    { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({

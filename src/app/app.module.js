@@ -19,6 +19,7 @@ var employee_detail_component_1 = require("./employee-detail.component");
 var department_list_component_1 = require("./department-list.component");
 var department_detail_component_1 = require("./department-detail.component");
 var log_component_1 = require("./log.component");
+var page_not_found_component_1 = require("./page-not-found.component");
 var app_routing_module_1 = require("./app-routing.module");
 var AppModule = (function () {
     function AppModule() {
@@ -41,7 +42,8 @@ AppModule = __decorate([
             employee_detail_component_1.EmployeeDetailComponent,
             department_list_component_1.DepartmentListComponent,
             department_detail_component_1.DepartmentDetailComponent,
-            log_component_1.LogComponent
+            log_component_1.LogComponent,
+            page_not_found_component_1.PageNotFoundComponent
         ],
         providers: [
             hero_service_1.HeroService

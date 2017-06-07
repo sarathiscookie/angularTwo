@@ -13,6 +13,7 @@ import { EmployeeDetailComponent }  from './employee-detail.component';
 import { DepartmentListComponent } from './department-list.component';
 import { DepartmentDetailComponent } from './department-detail.component';
 import { LogComponent } from './log.component';
+import { PageNotFoundComponent } from './page-not-found.component';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -32,7 +33,8 @@ import { AppRoutingModule } from './app-routing.module';
       EmployeeDetailComponent,
       DepartmentListComponent,
       DepartmentDetailComponent,
-      LogComponent
+      LogComponent,
+      PageNotFoundComponent
   ],
   providers: [
       HeroService
